@@ -73,12 +73,12 @@ function onCloseModal(event) {
   //Oчистка значения атрибута src элемента img.lightbox__image
   cleanSrcOfImg();
 }
-//закрытие модального окна по клику на бекдроп
-function onCloseModalbyBackdop(event) {
-  if (event.currentTarget === event.target) {
-    onCloseModal();
-  }
-}
+// //закрытие модального окна по клику на бекдроп
+// function onCloseModalbyBackdop(event) {
+//   if (event.currentTarget === event.target) {
+//     onCloseModal();
+//   }
+// }
 //закрытие модального окна по клику на "Escape"
 function onEscKeyPress(event) {
   const ESC_KEY_CODE = "Escape";
@@ -88,7 +88,7 @@ function onEscKeyPress(event) {
     onCloseModal();
   }
 }
-//
+
 function cleanSrcOfImg() {
   if (refs.imageEl.src !== "") {
     refs.imageEl.src = "";
