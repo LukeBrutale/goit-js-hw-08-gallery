@@ -74,11 +74,11 @@ function onCloseModal(event) {
   cleanSrcOfImg();
 }
 // //закрытие модального окна по клику на бекдроп
-// function onCloseModalbyBackdop(event) {
-//   if (event.currentTarget === event.target) {
-//     onCloseModal();
-//   }
-// }
+function onCloseModalbyBackdop(event) {
+  if (event.currentTarget === event.target) {
+    onCloseModal();
+  }
+}
 //закрытие модального окна по клику на "Escape"
 function onEscKeyPress(event) {
   const ESC_KEY_CODE = "Escape";
