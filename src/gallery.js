@@ -22,7 +22,7 @@ refs.closeModalBtn.addEventListener("click", onCloseModal);
 //обработчик клика на backdrop
 refs.lightboxOverlay.addEventListener("click", onCloseModalbyBackdop);
 
-//обработчик клика на картинек в галлерее
+//обработчик клика на картинку в галлерее
 function onGalleryContainerClick(event) {
   //убираем действие браузера по умолчанию чтоб не
   //было перехода по ссылке (<a>)
@@ -73,13 +73,13 @@ function onCloseModal(event) {
   //Oчистка значения атрибута src элемента img.lightbox__image
   cleanSrcOfImg();
 }
-// //закрытие модального окна по клику на бекдроп
+// //закрытие модального окна по клику на backdrop
 function onCloseModalbyBackdop(event) {
   if (event.currentTarget === event.target) {
     onCloseModal();
   }
 }
-//закрытие модального окна по клику на "Escape"
+//закрытие модального окна по клику на Escape
 function onEscKeyPress(event) {
   const ESC_KEY_CODE = "Escape";
   const isEscKey = event.code === ESC_KEY_CODE;
